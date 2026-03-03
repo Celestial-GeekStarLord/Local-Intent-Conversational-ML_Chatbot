@@ -3,3 +3,10 @@ chatbot_tf112_env/
 Model_Pretrained/blenderbot/
 Model_Pretrained/
 Model_Output/blenderbot/
+
+Intent_Model/
+Model_Output/
+*.keras
+*.pkl
+__pycache__/
+
