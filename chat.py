@@ -5,12 +5,12 @@ import pickle
 import random
 
 # Load files
-model = tf.keras.models.load_model("chat_model.keras")
+model = tf.keras.models.load_model("Intent_Model/chat_model.keras")
 
-with open("tokenizer.pkl", "rb") as f:
+with open("Intent_Model/tokenizer.pkl", "rb") as f:
     tokenizer = pickle.load(f)
 
-with open("label_encoder.pkl", "rb") as f:
+with open("Intent_Model/label_encoder.pkl", "rb") as f:
     lbl_encoder = pickle.load(f)
 
 with open("intents.json") as file:

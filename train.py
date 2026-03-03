@@ -58,12 +58,12 @@ model.compile(loss='sparse_categorical_crossentropy',
 model.fit(padded, np.array(labels), epochs=300)
 
 # Save model + tokenizer + encoder
-model.save("chat_model.keras")
+model.save("Intent_Model/chat_model.keras")
 
-with open('tokenizer.pkl', 'wb') as f:
+with open('Intent_Model/tokenizer.pkl', 'wb') as f:
     pickle.dump(tokenizer, f)
 
-with open('label_encoder.pkl', 'wb') as f:
+with open('Intent_Model/label_encoder.pkl', 'wb') as f:
     pickle.dump(lbl_encoder, f)
 
 print("Training complete!")
